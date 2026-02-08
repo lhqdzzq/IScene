@@ -1,3 +1,16 @@
+## Environment
+Set Conda Environment:
+```bash
+conda create -n sbir python==3.12
+pip3 install --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/cu128
+pip install torch torchvision torchaudio
+pip install transformers datasets accelerate diffusers 
+pip install xformers controlnet_aux
+pip install open_clip_torch==2.24.0
+pip install einops_exts einops
+pip install matplotlib seaborn
+```
+
 ## Dataset
 You can get FS-COCO from [FS-COCO](https://github.com/pinakinathc/fscoco) and SketchyCOCO from [SketchyCOCO](https://github.com/sysu-imsl/SketchyCOCO)
 ## Evaluate
